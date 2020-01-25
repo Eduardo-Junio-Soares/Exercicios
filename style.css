@@ -22,8 +22,8 @@ body {
 .content {
     background-color: white;
     border-radius: 15px;
-    width: 80%;
-    height: 50%;
+    width: 960px;
+    height: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +46,6 @@ body {
 .first-content {
     display: flex;
     
-
 }
 
 .title {
@@ -62,38 +61,54 @@ body {
     
 }
 
+.title-second {
+    color: #58af9b;
+}
+
 .first-column {
     text-align: center;
     flex: 1 0 auto;
     z-index: 10;
+    
 
 }
 
-.description {
+.description-primary {
     font-size: 14px;
     color: white;
+    margin-top: 10px;
+}
+
+.description-secundary {
+    color: #95a5a6;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .btn {
+    margin-top: 1rem;
     border-radius: 15px;
     background-color: #58af9b;
-    color: white;
     text-transform: uppercase;
     font-size: 10px;
     padding: 10px 50px;
     border-color: 2px white;
+    width: 150px;
+    align-self: center;
+    border: none;
     
 }
 
-.btn:hover {
-    ba
-}
+
 
 .btn-primary {
     background-color: transparent;
     border: 1px solid white;
     padding: 10px 50px;
     border-radius: 15px;
+    color: #fff;
+    margin-top: 15px;
+
     
 }
 
@@ -103,19 +118,93 @@ body {
     font-weight: bold;
 }
 
+.btn-second {
+    color: #fff;
+    border: 1px solid #58af9b;
+}
+
+.btn-second:hover {
+    background-color: #fff;
+    border-color: #58af9b;
+    color:  #58af9b;
+    ;
+}
 
 
 .second-column {
     flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    margin: 1rem 0;
+}
+
+
+.item-social-media:not(:first-child) {
+    margin-left: 10px;
+}
+
+.link-social-media:hover .item-social-media{
+    background-color: #b0b1b1;
 }
 
 .list-social-media {
     display: flex;
+    list-style-type: none;
 }
+
+
+.item-social-media {
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.linkedin {
+    color: cornflowerblue;
+}
+
+.red {
+    color: firebrick;
+}
+
+.facebook {
+   color: rgb(23, 82, 192)
+}
+
+
 
 .form {
     display: flex;
     flex-direction: column;
+    width: 55%;
+}
+
+.form input {
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+    width: 100%;
+
+}
+
+.label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-modify {
+    color: #7f8c8d;
+    padding: 0px 5px;
 }
 
 .second-content {
